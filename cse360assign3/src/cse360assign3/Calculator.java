@@ -24,45 +24,63 @@ public class Calculator {
 	}
 	
 	/** Description of getTotal()
+	 *	Returns the total variable.
+	 *
+	 *	@return total return global variable total. 
 	 *  */
 	
 	public int getTotal () {
-		return 0;
+		return total;
 	}
 	
 	/** Description of add(int value)
+	 * 	Add the the param value to variable total
 	 * 
-	 * @param value
+	 * @param value The number added to total
 	 *  */
 	
 	public void add (int value) {
 		
+		total += value;
+		
 	}
 	
 	/** Description of subtract(int value)
+	 * 	Subtract the the param value to variable total
 	 * 
-	 * @param value
+	 * @param value The number subtracted to total
 	 *  */
 	
 	public void subtract (int value) {
 		
+		total -= value;
+		
 	}
 	
 	/** Description of multiply(int value)
+	 * 	Multiply the the param value to variable total
 	 * 
-	 * @param value
+	 * @param value The number multiplied to total
 	 *  */
 	
 	public void multiply (int value) {
 		
+		total *= value;
+		
 	}
 	
 	/** Description of divide(int value) 
+	 * 	Divide the the param value to variable total
 	 * 
-	 * @param value
+	 * @param value The number divided to total
 	 *  */
 	
 	public void divide (int value) {
+		
+		if(value==0)
+			total = 0;
+		else
+			total /= value;
 		
 	}
 	
@@ -72,6 +90,7 @@ public class Calculator {
 	 *  */
 	
 	public String getHistory () {
+		
 		return "";
 	}
 

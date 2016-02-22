@@ -10,33 +10,77 @@ public class CalculatorTest {
 	public void testCalculator() {
 		
 		Calculator calc = new Calculator();
+		
 		assertNotNull(calc);
 		
 	}
 
 	@Test
 	public void testGetTotal() {
-		fail("Not yet implemented");
+		
+		Calculator calc = new Calculator();
+		
+		assertEquals(0, calc.getTotal());
+		
 	}
 
 	@Test
 	public void testAdd() {
-		fail("Not yet implemented");
+		
+		Calculator calc = new Calculator();
+		
+		calc.add(2);
+		
+		assertEquals(2, calc.getTotal());
+		
 	}
 
 	@Test
 	public void testSubtract() {
-		fail("Not yet implemented");
+		
+		Calculator calc = new Calculator();
+		
+		calc.add(3);
+		calc.subtract(2);
+		
+		assertEquals(1, calc.getTotal());
+		
 	}
 
 	@Test
 	public void testMultiply() {
-		fail("Not yet implemented");
+		
+		Calculator calc = new Calculator();
+		
+		calc.add(3);
+		calc.multiply(2);
+		
+		assertEquals(6, calc.getTotal());
+		
 	}
 
 	@Test
 	public void testDivide() {
-		fail("Not yet implemented");
+		
+		Calculator calc = new Calculator();
+		
+		calc.add(6);
+		calc.divide(2);
+		
+		assertEquals(3, calc.getTotal());
+		
+	}
+	
+	@Test
+	public void testDivideByZero() {
+		
+		Calculator calc = new Calculator();
+		
+		calc.add(6);
+		calc.divide(0);
+		
+		assertEquals(0, calc.getTotal());
+		
 	}
 
 	@Test
